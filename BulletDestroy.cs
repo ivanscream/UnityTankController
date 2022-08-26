@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BulletDestroy : MonoBehaviour // this script should be directly on a bullet
 {
-    // pick an explison you like
+    // pick an exploson you like
     public ParticleSystem explosion;
     [Header ("Adjust explosion criteria")]
     public float explosionRadius = 5f;
