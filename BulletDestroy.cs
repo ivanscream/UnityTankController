@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BulletDestroy : MonoBehaviour // this script should be directly on a bullet
 {
-    // pick an exploson you like
+    // pick an explosion you like
     public ParticleSystem explosion;
     [Header ("Adjust explosion criteria")]
     public float explosionRadius = 5f;
@@ -25,7 +25,7 @@ public class BulletDestroy : MonoBehaviour // this script should be directly on 
             // creates the explosion at the missile's position
             Instantiate(explosion, gameObject.transform.position, Quaternion.identity);
 
-            // explison will affect all objects on the scene with both colliders and rigidbody
+            // explosion will affect all objects on the scene with both colliders and rigidbody
             Vector3 explosionPos = transform.position;
             Collider[] colliders = Physics.OverlapSphere(explosionPos, explosionRadius);
 
@@ -40,8 +40,8 @@ public class BulletDestroy : MonoBehaviour // this script should be directly on 
         }
     }
 
-    // this one is for destroying missile and making an explision at it's position
-    // if it doesn't hit the target
+    // this one is for destroying missile and making an explosion at it's position
+    // if it doesn't hit any target
     IEnumerator AirExplosion() { 
 
         yield return new WaitForSeconds (2f);
