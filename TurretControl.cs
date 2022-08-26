@@ -15,6 +15,7 @@ public class TurretControl : MonoBehaviour
     [Header ("Barrel end effects at shot")]
     public ParticleSystem explosion, shot;
     public Rigidbody bullet;
+    // empty game object at the end of a barrel, where you want to create a missile
     public Transform barrelEnd;
     public static bool bulletIsShot;
     [Header ("Tank cameras")]
