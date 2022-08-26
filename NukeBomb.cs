@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NukeBomb : MonoBehaviour
+public class NukeBomb : MonoBehaviour // place script right on the bomb prefab
 {
     // pick the nuke explosion
     public ParticleSystem nukeExpl;
